@@ -1,0 +1,13 @@
+name: Saludo en push
+
+on:[push]
+
+jobs: 
+  geets:
+    runs-on: ubuntu-latest
+
+	
+	stesps:
+	-uses: actions/checkout@v4
+	-name: Saludar
+	 run: echo "Hola, GitHub Actions!"
